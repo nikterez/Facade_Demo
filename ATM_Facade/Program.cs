@@ -8,7 +8,7 @@ namespace Restaurant_Facade
         static void Main(string[] args)
         {
 
-            var orderedDishes = new List<MenuItem>
+            var selectedItems = new List<MenuItem>
             {
                 new MenuItem {Name = "Steak", Price = 10.50},
                 new MenuItem { Name = "Chicken", Price = 7.00 },
@@ -16,7 +16,7 @@ namespace Restaurant_Facade
             };
 
             var restaurantFacade = new RestaurantFacade();
-            restaurantFacade.CreateOrder(orderedDishes);
+            restaurantFacade.CreateOrder(selectedItems);
 
         }
     }
